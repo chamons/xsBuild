@@ -9,7 +9,9 @@ namespace xsBuild
 		static void Main (string[] args)
 		{
 			NSApplication.Init ();
-			NSUrl path = NSBundle.MainBundle.GetUrlForResource ("Script", "txt");
+
+			string scriptName = Environment.GetEnvironmentVariable ("XS_START_DEBUG") != null ? "ScriptRun" : "ScriptBuild";
+			NSUrl path = NSBundle.MainBundle.GetUrlForResource (scriptName, "txt");
 
 			NSDictionary err;
 			NSAppleScript appleScript = new NSAppleScript (path, out err);
