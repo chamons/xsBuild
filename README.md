@@ -1,6 +1,6 @@
 # xsBuild
 
-Script to invoke Build -> Build All in an open Xamarin Studio
+Script to invoke Build -> Build All and (Start Debugging) in an open Xamarin Studio
 
 # Instrucitions
 
@@ -8,6 +8,7 @@ Script to invoke Build -> Build All in an open Xamarin Studio
 * mkdir -p ~/bin/
 * cp -r src/bin/Release/xsBuild.app ~/bin/
 * cp xsBuild ~/bin/
+* cp xsRun ~/bin/
 * System Preferences -> Security & Privacy -> Privacy Tab -> Accessibility and Add xsBuild and Terminal.app
 
 # Why do you need a full Xamarin.Mac project for this?
